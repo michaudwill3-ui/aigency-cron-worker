@@ -84,7 +84,4 @@ cron.schedule('*/3 * * * *', async () => {
 })
 
 // Keep process alive
-process.on('SIGTERM', () => {
-  console.log('SIGTERM received, shutting down...')
-  process.exit(0)
-})
+setInterval(() => {}, 1000)
